@@ -515,6 +515,14 @@ body {
     overflow-x: hidden;
   }
 
+  .navbar-extra {
+    display: flex; 
+    align-items: center; 
+  }
+
+  #search-input {
+    margin-right: 1rem; 
+  }
 
   .info-box p {
     font-size: 12px;
