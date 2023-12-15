@@ -1,0 +1,98 @@
+/* styles/kampung-wisata-sosromenduran.css */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #001f3f;
+  /* atur warna p dari route info disini */
+  color: #fff;
+  min-height: 1300px;
+}
+
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-style: italic;
+  font-size: 2em;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.location-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.location-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.location-info {
+  text-align: justify;
+}
+
+.location-info .upper-paragraph {
+  text-align: justify;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* Gaya untuk paragraf di bawah */
+.location-info .lower-paragraph {
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ffff00;
+}
+
+th {
+  background-color: #0000cd;
+}
+
+th,
+td {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Sesuaikan tinggi footer sesuai kebutuhan Anda */
+  background-color: #001f3f; /* Sesuaikan warna background sesuai kebutuhan Anda */
+}
+
+.copyright {
+  color: #fff;
+}

@@ -1,0 +1,271 @@
+<!-- lokasi/museum-monumen-pangeran-diponegoro-sasana-wiratama.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum Monumen Pangeran Diponegoro Sasana Wiratama</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/museum-monumen-pangeran-diponegoro-sasana-wiratama.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Museum Monumen Pangeran Diponegoro Sasana Wiratama</h1>
+    </header>
+
+    <!-- Content -->
+    <section class="location-details">
+      <img
+        src="../img/lokasi wisata/museum pangeran diponegoro.jpg"
+        alt="Museum Monumen Pangeran Diponegoro Sasana Wiratama"
+        class="location-image"
+      />
+      <div class="location-info">
+        <h2>Museum Monumen Pangeran Diponegoro Sasana Wiratama</h2>
+        <p class="upper-paragraph">Pangeran Diponegoro Monumen Sasana Wiratama Museum adalah museum khusus dengan koleksi berupa peninggalan-peninggalan Pangeran Diponegoro. Pengelolaannya dilakukan oleh Yayasan Sasana Wiratama.
+          Pangeran Diponegoro adalah seorang keturunan bangsawan yang menjadi pahlawan bangsa. Beliau mengadakan perlawanan melawan penjajahan Belanda pada tahun 1825-1830, dikenal dengan Perang Diponegoro. Museum ini didirikan untuk mengenang jasa-jasa, perjuangan dan didikasinya tersebut. Museum dibangun ssecara bertahap dan diresmikan pada tanggal 9 Agustus 1969 oleh Jendral TNI (Purnawirawan) Soeharto.</p>
+          <p class="upper-paragraph">
+            Koleksi Museum Monumen Pangeran Diponegoro Sasana Wiratama antara lain berupa senjata asli laskar Diponegoro seperti tombak, bandil atau martil baja, serta patrem dan candrasa yang merupakan senjata lascar wanita. Terdapat juga dua senjata keramat, yaitu sebuah keris dengan lekukan 21 seorang empu pada masa Kerajaan Majapahit serta sebuah pedang yang berasal dari Kerajaan Demak. Kedua senjata tersebut dipercaya dapat menolak bala. Koleksi lainnya berupa peralatan rumah tangga, yang terbuat dari kuningan, seperangkat alat gamelan milik Sri Sultan Hamengku Buwono II, meriam, dan batu Comboran yang digunakan untuk tempat minum Kuda. Salah satu koleksi unggulan museum ini adalah Tembok Jebol. Kono tembok berlubang tersebut dijebol oleh Pangeran Diponegoro dengan tangan kosong guna menghindari kepungan tentara Belanda.
+          </p>
+        <h3>Keterangan:</h3>
+        <!-- Informasi lainnya tentang lokasi -->
+      </div>
+    </section>
+
+    <section class="location-info">
+      <h3>Alamat</h3>
+      <p class="lower-paragraph">Jln. HOS. Cokroaminoto TR III/430, Tegalrejo, Yogyakarta.</p>
+      <h3>Jam Buka</h3>
+      <p class="lower-paragraph">Senin - Jumat : 09.00 - 15.00</p>
+      <h3>Tiket</h3>
+      <p class="lower-paragraph">Gratis</p>
+      <h3>Fasilitas</h3>
+      <p class="lower-paragraph">
+        Parkir, Penginapan, Toilet, Pendopo
+      </p>
+      <h3>Kontak</h3>
+      <p class="lower-paragraph">082223242398 </p>
+    </section>
+
+    <h3>Peta Lokasi</h3>
+    <div id="map" style="width: 100%; height: 400px"></div>
+
+    <!-- Informasi Rute -->
+<class="route-info">
+  <h3>Informasi Perjalanan</h3>
+  <p>Informasi perjalanan berdasarkan rute dan asal tujuan akan dijelaskan disini.</p>
+  <!-- Tambahkan informasi rute sesuai kebutuhan -->
+  
+<!-- Tabel Informasi Rute -->
+<table>
+<thead>
+  <tr>
+    <th>No</th>
+    <th>Jalur</th>
+    <th>Halte Naik</th>
+    <th>Halte Turun</th>
+    <th>Warna</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>8</td>
+    <td>Terminal Jombor</td>
+    <td>TPB Portabel Soragan 1</td>
+    <td>Turkis</td>
+  </tr>
+</tbody>
+</table>
+</section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="copyright">
+        <p>&copy; 2023 Anglukis Bus. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Your custom JavaScript for the map -->
+    <script>
+      // Initialize the map with Leaflet
+      var map = L.map("map").setView([-7.7867112101600195, 110.35147419929285], 15); // Replace coordinates with your location's coordinates
+
+      // Add the map layer from OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Add location marker with a popup containing a button
+      var marker = L.marker([-7.7867112101600195, 110.35147419929285]).addTo(map);
+
+      var popupContent = document.createElement("div");
+      popupContent.innerHTML =
+        "<p>Museum Monumen Pangeran Diponegoro Sasana Wiratama</p>";
+
+      var button = document.createElement("button");
+      button.innerHTML = "Menuju Lokasi";
+      button.addEventListener("click", redirectToGoogleMaps);
+
+      popupContent.appendChild(button);
+
+      marker.bindPopup(popupContent);
+
+      var geojsonFeature = {
+        type: "FeatureCollection",
+        features: [
+          {
+            type: "Feature",
+            properties: {
+              color: "turquoise",
+              nama_jalur: "Jalur Terminal Jombor - Jogokaryan",
+              nomor_bus: "8",
+            },
+            geometry: {
+              coordinates: [
+                [110.36149037329392, -7.74738308021648],
+                [110.36109362936662, -7.747305033837108],
+                [110.36101194679327, -7.747487142033592],
+                [110.36063272018731, -7.747418697104081],
+                [110.36074961496979, -7.7477854848632575],
+                [110.36071552065806, -7.748446667254427],
+                [110.36197468292858, -7.7489615612976905],
+                [110.36199416539313, -7.749062910207883],
+                [110.36190649430506, -7.749169085229582],
+                [110.36079112325166, -7.748676818991498],
+                [110.35985720896235, -7.748227179342834],
+                [110.35906443401115, -7.747945372263587],
+                [110.34615584621747, -7.743956623189575],
+                [110.34553132552173, -7.743869950091337],
+                [110.34457937588547, -7.744180235555248],
+                [110.34376520843398, -7.744862862773871],
+                [110.341026494777, -7.749244095897282],
+                [110.33182052312253, -7.776790761675869],
+                [110.3319847304058, -7.7772125685668385],
+                [110.33534634895238, -7.777925491312558],
+                [110.35329306526432, -7.7818501251795595],
+                [110.35794094430793, -7.782779015547945],
+                [110.36077143408727, -7.782765063224005],
+                [110.36544533439763, -7.7828437880625785],
+                [110.3664818243949, -7.782816280677636],
+                [110.3669260343944, -7.782807111550014],
+                [110.36703708689373, -7.782733758515164],
+                [110.36724993751704, -7.782834618934459],
+                [110.36714813939301, -7.7829904940797405],
+                [110.36704634126897, -7.783091354436152],
+                [110.36701857814307, -7.783412273593498],
+                [110.36628263757683, -7.789494657048806],
+                [110.36767675940939, -7.789689986397562],
+                [110.3685163819365, -7.7896828682223855],
+                [110.36844986751328, -7.789957454157161],
+                [110.36830021006057, -7.790319907314384],
+                [110.3679898094187, -7.790308923889583],
+                [110.36756300853557, -7.79013868077503],
+                [110.36618283425014, -7.790105730486786],
+                [110.36541914284686, -7.796344734482517],
+                [110.36477989638524, -7.801377126171303],
+                [110.35651935054653, -7.801165674345256],
+                [110.35641650949248, -7.80401395624618],
+                [110.3562643703907, -7.804271655908664],
+                [110.35586986833772, -7.812927086130657],
+                [110.35605182393118, -7.813313371383202],
+                [110.35586834232095, -7.817995161651737],
+                [110.3541395908577, -7.827734889761203],
+                [110.35689035703479, -7.827988033848442],
+                [110.35766804744168, -7.828464974754269],
+                [110.35805689264623, -7.829198728927665],
+                [110.3579916851736, -7.831128545117181],
+                [110.35791557941212, -7.8321589557939575],
+                [110.35834684539606, -7.833088836411093],
+                [110.35920937736222, -7.833465814448715],
+                [110.36573946857624, -7.835594787468608],
+                [110.36713791545657, -7.832538768785184],
+                [110.3684085141191, -7.8147997955871915],
+                [110.356212806521, -7.813096053671515],
+                [110.35583691031405, -7.812929716886643],
+                [110.35586808504274, -7.812424320101371],
+                [110.35593939563705, -7.811961891905597],
+                [110.35622811923531, -7.8043645167090006],
+                [110.35638005995168, -7.803992144533439],
+                [110.35645534914977, -7.80114889830196],
+                [110.36206838407008, -7.8012453735513105],
+                [110.36213660101839, -7.798802629994029],
+                [110.36217088415515, -7.796221762113447],
+                [110.36158627347447, -7.795767788813734],
+                [110.36121101153276, -7.795415861590939],
+                [110.36133264725402, -7.793487670793468],
+                [110.36211581734722, -7.789779737624173],
+                [110.36168177463577, -7.789603813204707],
+                [110.3588999554525, -7.789476756634031],
+                [110.35751948292045, -7.789337551390602],
+                [110.3572048140615, -7.789426627220038],
+                [110.35629676963475, -7.78987200608276],
+                [110.35559010030966, -7.790197201014095],
+                [110.35499033432274, -7.790300201002083],
+                [110.35387876802992, -7.790149662549666],
+                [110.35397644408954, -7.788021252200252],
+                [110.3537791563121, -7.7876611793518435],
+                [110.35274742328045, -7.786862203640837],
+                [110.35259405151663, -7.786625825223936],
+                [110.35268428346387, -7.781728908035916],
+                [110.33158115198825, -7.777150792831378],
+                [110.33887592266149, -7.7552354037186575],
+                [110.34086458720736, -7.749424987526396],
+                [110.34345804182539, -7.745232378807444],
+                [110.34409376260152, -7.744426515373746],
+                [110.34480452041362, -7.743993767865206],
+                [110.3454810248337, -7.743790121824489],
+                [110.34612327586831, -7.743874974353346],
+                [110.35908736533815, -7.747860734636845],
+                [110.36209425686008, -7.748978956102306],
+                [110.36222294980166, -7.748972007632531],
+                [110.36229271801415, -7.748584873239594],
+                [110.36241147421447, -7.746823723417776],
+                [110.36180681638558, -7.746816810270644],
+                [110.36173007135227, -7.747455123635248],
+                [110.36148820822075, -7.747383687890732],
+              ],
+              type: "LineString",
+            },
+          },
+          // ... tambahkan fitur GeoJSON lainnya jika diperlukan
+        ],
+      };
+
+      L.geoJSON(geojsonFeature, {
+        style: function (feature) {
+          return {
+            color: feature.properties.color, // Ambil warna dari properti fitur
+            weight: 2, // Atur ketebalan garis sesuai kebutuhan
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          // Ambil informasi spesifik dari properti dan masukkan ke dalam popup
+          var popupContent =
+            "<b>Nama Jalur:</b> " +
+            feature.properties.nama_jalur +
+            "<br><b>Nomor Bus:</b> " +
+            feature.properties.nomor_bus;
+
+          // Tambahkan popup ke setiap jalur
+          layer.bindPopup(popupContent);
+        },
+      }).addTo(map);
+
+      function redirectToGoogleMaps() {
+        window.open("https://www.google.com/maps?q=-7.7867112101600195, 110.35147419929285"); // Replace coordinates with your location's coordinates
+      }
+    </script>
+  </body>
+</html>
