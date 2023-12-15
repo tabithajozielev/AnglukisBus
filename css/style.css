@@ -510,8 +510,7 @@ body {
   }
 
   body {
-    min-height: auto; /* Atur kembali min-height menjadi auto */
-    overflow-x: hidden;
+    min-height: auto;
   }
 
   #hamburger-menu {
@@ -519,14 +518,16 @@ body {
   }
 
   .navbar .navbar-nav {
-    position: relative;
+    position: absolute;
+    top: 100%;
+    right: 0;
     background-color: #fff;
-    width: 100%;
-    display: none;
+    width: 100%; 
+    display: none; 
   }
 
-  .navbar .navbar-active {
-    display: block;
+  .navbar .navbar-active .navbar-nav {
+    display: block; 
   }
 
   .navbar .navbar-nav a {
@@ -545,7 +546,32 @@ body {
     transform: scaleX(0.2);
   }
 
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+    width: 100%; 
+    height: auto;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
   .info-box p {
-    font-size: 12px;
+    font-size: 12px; 
   }
 }
