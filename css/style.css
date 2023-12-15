@@ -518,6 +518,33 @@ body {
     display: inline-block;
   }
 
+  .navbar .navbar-nav {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar .navbar-active {
+    display: block;
+  }
+
+  .navbar .navbar-nav a {
+    color: #333;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
   .info-box p {
     font-size: 12px;
   }
