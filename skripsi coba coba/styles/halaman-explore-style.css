@@ -1,0 +1,168 @@
+/* halaman-explore-style.css yang benar */
+
+body {
+  background-color: #eaeaea; /* Silver untuk background keseluruhan laman */
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.map-header {
+  background-color: navy;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Table Styles for Bus Route Information */
+.bus-routes {
+  margin-top: 20px;
+}
+
+.bus-routes h2 {
+  text-align: center;
+  font-size: 28px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.bus-routes p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.bus-routes ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.bus-routes ol li {
+  margin-bottom: 10px;
+}
+
+/* halaman-explore-style.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #000000;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+thead th,
+tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Ganti warna latar belakang dan teks di setiap baris */
+tbody tr:nth-child(1) td {
+  background-color: #ccccff; /* Warna latar belakang baris 1 */
+  color: #000; /* Warna teks baris 1 */
+}
+
+tbody tr:nth-child(2) td {
+  background-color: #ffcc99; /* Warna latar belakang baris 2 */
+  color: #000; /* Warna teks baris 2 */
+}
+
+tbody tr:nth-child(3) td {
+  background-color: #99ccff; /* Warna latar belakang baris 3 */
+  color: #000; /* Warna teks baris 3 */
+}
+
+tbody tr:nth-child(4) td {
+  background-color: #ffccff; /* Warna latar belakang baris 4 */
+  color: #000; /* Warna teks baris 4 */
+}
+
+tbody tr:nth-child(5) td {
+  background-color: #ccffcc; /* Warna latar belakang baris 5 */
+  color: #000; /* Warna teks baris 5 */
+}
+
+tbody tr:nth-child(6) td {
+  background-color: #ff6666; /* Warna latar belakang baris 6 */
+  color: #000; /* Warna teks baris 6 */
+}
+
+tbody tr:nth-child(7) td {
+  background-color: #66ff66; /* Warna latar belakang baris 7 */
+  color: #000; /* Warna teks baris 7 */
+}
+
+tbody tr:nth-child(8) td {
+  background-color: #ff9966; /* Warna latar belakang baris 8 */
+  color: #000; /* Warna teks baris 8 */
+}
+
+tbody tr:nth-child(9) td {
+  background-color: #cc99ff; /* Warna latar belakang baris 9 */
+  color: #000; /* Warna teks baris 9 */
+}
+
+tbody tr:nth-child(10) td {
+  background-color: #99ffcc; /* Warna latar belakang baris 10 */
+  color: #000; /* Warna teks baris 10 */
+}
+
+tbody tr:nth-child(11) td {
+  background-color: #ffcc66; /* Warna latar belakang baris 11 */
+  color: #000; /* Warna teks baris 11 */
+}
+
+tbody tr:nth-child(12) td {
+  background-color: #ccff66; /* Warna latar belakang baris 12 */
+  color: #000; /* Warna teks baris 12 */
+}
+
+tbody tr:nth-child(13) td {
+  background-color: #66ccff; /* Warna latar belakang baris 13 */
+  color: #000; /* Warna teks baris 13 */
+}
+
+/* CSS untuk Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+  background-color: #eaeaea; /* Ganti dengan warna latar belakang yang diinginkan */
+  color: rgb(3, 3, 3); /* Ganti dengan warna teks yang diinginkan */
+}
+
+/* CSS untuk Copyright */
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+}

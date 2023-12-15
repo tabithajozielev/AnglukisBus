@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anglukis Bus</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- styleku -->
+    <link rel="stylesheet" href="css/style.css"
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">anglukis<span>BUS</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home" class="translate">Home</a>
+        <a href="#about" class="translate">Explore Yogyakarta</a>
+        <a href="#menu" class="translate">Location</a>
+        <a href="#map" class="translate">Map</a>
+        <a href="#contact" class="translate">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Cari lokasi..."
+          list="locations"
+        />
+        <datalist id="locations"></datalist>
+        <!--
+        <a href="#" id="map"><i data-feather="map"></i></a>
+        -->
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Naik <span>BUS</span></h1>
+        <p>
+          Temukan rute perjalanan wisata budaya dan pendidikan dengan mudah di
+          sini. Nikmati pengalaman tak terlupakan dengan destinasi yang berisi
+          sejarah dan kebudayaan. Mulai petualangan Anda sekarang.
+        </p>
+        <a href="halaman-explore.html" class="cta translate">Explore Now</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- about section start -->
+    <section id="about" class="about">
+      <h2><span>Eksplorasi</span> Yogyakarta</h2>
+      <!-- Konten Tentang Kami -->
+
+      <div class="row">
+        <div class="about-img">
+          <img
+            src="img/farhan-abas-sHLxeo8is3k-unsplash.jpg"
+            alt="Tentang Kami"
+          />
+        </div>
+        <div class="content">
+          <h3>Kenapa Yogyakarta?</h3>
+          <p>
+            Yogyakarta, kota yang kaya akan kebudayaan dan pendidikan, menyambut
+            setiap pengunjung dengan keindahan dan pesona alam yang memukau.
+            Dengan destinasi wisata yang mengusung nilai-nilai budaya dan
+            pendidikan, Yogyakarta menawarkan pengalaman yang mendalam bagi para
+            pelancong.
+          </p>
+          <p>
+            Explore keunikan kuliner dan nikmati atraksi menarik yang
+            menggambarkan keberagaman budaya. Sambil menjelajahi warisan sejarah
+            dan kebudayaan kota ini, Anda dapat merasakan atmosfer pendidikan
+            melalui destinasi-destinasi yang menginspirasi. Yogyakarta, dengan
+            pesona alamnya yang memukau, menjadikan perjalanan Anda tidak hanya
+            menghibur tetapi juga memperkaya pengetahuan tentang kekayaan budaya
+            dan nilai pendidikan Indonesia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section end -->
+
+    <!-- Lokasi section start -->
+    <section id="menu" class="menu">
+      <h2><span>Lokasi</span> Wisata</h2>
+      <p>
+        Pilih destinasi budaya dan pendidikan yang menarik untuk dijelajahi.
+        Temukan warisan sejarah, seni yang memukau, dan pengalaman pendidikan
+        yang memberi wawasan baru.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <a href="lokasi/jogja-national-museum.html">
+            <!-- Tambahkan tautan ke halaman baru di sini -->
+            <img
+              src="img/lokasi wisata/jogja national museum.jpg"
+              alt="Jogja National Museum"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Jogja National Museum -</h3>
+            <p class="menu-card-address">
+              Jl. Prof. DR. Ki Amri Yahya No.1, Pakuncen, Wirobrajan, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/kampung-wisata-sosromenduran.html">
+            <img
+              src="img/lokasi wisata/kampung wisata sosromendruan.jpg"
+              alt="Kampung Wisata Sosromenduran"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Kampung Wisata Sosromenduran -</h3>
+            <p class="menu-card-address">
+              Jl. Sosrowijayan No.69, Sosromenduran, Gedong Tengen, Kota
+              Yogyakarta, Daerah Istimewa Yogyakarta 55271
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-bahari.html">
+            <img
+              src="img/lokasi wisata/museum bahari.jpg"
+              alt="Museum Bahari"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Bahari -</h3>
+            <p class="menu-card-address">
+              Jl. R. E. Martadinata No.69, Wirobrajan, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-batik-keraton-yogyakarta.html">
+            <img
+              src="img/lokasi wisata/museum batik keraton yogyakarta.jpg"
+              alt="Museum Batik Keraton Yogyakarta"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Batik Keraton Yogyakarta -</h3>
+            <p class="menu-card-address">
+              Jl. Rotowijayan No.1, Panembahan, Kecamatan Kraton, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-batik-yogyakarta.html">
+            <img
+              src="img/lokasi wisata/museum batik yogyakarta.jpg"
+              alt="Museum Batik Yogyakarta"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Batik Yogyakarta -</h3>
+            <p class="menu-card-address">
+              Jl. Doktor Sutomo No.13A, Bausasran, Kec. Danurejan, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-benteng-vredebrug-yogyakarta.html">
+            <img
+              src="img/lokasi wisata/museum benteng vredebrug.jpg"
+              alt="Museum Benteng Vredebrug Yogyakarta"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              - Museum Benteng Vredebrug Yogyakarta -
+            </h3>
+            <p class="menu-card-address">
+              Jl. Margo Mulyo No.6, Ngupasan, Kec. Gondomanan, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-biologi-fakultas-biologi-ugm.html">
+            <img
+              src="img/lokasi wisata/museum biologi ugm.jpeg"
+              alt="Museum Biologi Fakultas Biologi UGM"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              - Museum Biologi Fakultas Biologi UGM -
+            </h3>
+            <p class="menu-card-address">
+              Jl. Sultan Agung No.22, Wirogunan, Kec. Mergangsan, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-dewantara-kirti-griya.html">
+            <img
+              src="img/lokasi wisata/museum dewantara kirti griya.jpg"
+              alt="Museum Dewantara Kirti Griya"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Dewantara Kirti Griya -</h3>
+            <p class="menu-card-address">
+              Jl. Taman Siswa No.31, Wirogunan, Kec. Mergangsan, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-kereta-kraton-yogyakarta.html">
+            <img
+              src="img/lokasi wisata/museum kereta keraton yogyakarta.jpg"
+              alt="Museum Kereta Kraton Yogyakarta"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Kereta Kraton Yogyakarta -</h3>
+            <p class="menu-card-address">
+              Jl. Rotowijayan, Kadipaten, Kecamatan Kraton, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-kotagede-intro-living.html">
+            <img
+              src="img/lokasi wisata/museum kotagede intro living.jpg"
+              alt="Museum Kotagede Intro Living"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Kotagede Intro Living -</h3>
+            <p class="menu-card-address">
+              Jl. Tegal Gendu No.20, Prenggan, Kec. Kotagede, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a
+            href="lokasi/museum-monumen-pangeran-diponegoro-sasana-wiratama.html"
+          >
+            <img
+              src="img/lokasi wisata/museum pangeran diponegoro.jpg"
+              alt="Museum Monumen Pangeran Diponegoro Sasana Wiratama"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              - Museum Monumen Pangeran Diponegoro Sasana Wiratama -
+            </h3>
+            <p class="menu-card-address">
+              Jl. HOS Cokroaminoto TR-III/430, Tegalrejo, Kec. Tegalrejo, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-perjuangan-yogyakarta.html">
+            <img
+              src="img/lokasi wisata/Museum_Perjuangan_Yogyakarta.jpg"
+              alt="Museum Perjuangan Yogyakarta"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Perjuangan Yogyakarta -</h3>
+            <p class="menu-card-address">
+              Jl. Kolonel Sugiyono No.24, Brontokusuman, Kec. Mergangsan, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-puro-pakualaman.html">
+            <img
+              src="img/lokasi wisata/museum puro pakualaman.jpg"
+              alt="Museum Puro Pakualaman"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Puro Pakualaman -</h3>
+            <p class="menu-card-address">
+              Jl. Masjid No.46, Gunungketur, Pakualaman, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-tni-ad-dharma-wiratama.html">
+            <img
+              src="img/lokasi wisata/museum tni ad.jpg"
+              alt="Museum Pusat TNI-AD Dharma Wiratama"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              - Museum Pusat TNI-AD Dharma Wiratama -
+            </h3>
+            <p class="menu-card-address">
+              Jl. Jend. Sudirman No.75, Terban, Kec. Gondokusuman, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-sandi.html">
+            <img
+              src="img/lokasi wisata/museum sandi.jpg"
+              alt="Museum Sandi"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Sandi -</h3>
+            <p class="menu-card-address">
+              Jl. Faridan M Noto No.21, Kotabaru, Kec. Gondokusuman, Kota
+              Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-sasmitaloka-panglima-besar-sudirman.html">
+            <img
+              src="img/lokasi wisata/museum panglima sudirman.jpg"
+              alt="Museum Sasmitaloka Panglima Besar Sudirman"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              - Museum Sasmitaloka Panglima Besar Sudirman -
+            </h3>
+            <p class="menu-card-address">
+              Jl. Bintaran Wetan No.3, Gunungketur, Pakualaman, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-sonobudoyo-unit-i.html">
+            <img
+              src="img/lokasi wisata/museum sonobudoyo 1.jpeg"
+              alt="Museum Sonobudoyo Unit I"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Sonobudoyo Unit I -</h3>
+            <p class="menu-card-address">
+              Jl. Pangurakan No.6, Ngupasan, Kec. Gondomanan, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/museum-sonobudoyo-unit-ii.html">
+            <img
+              src="img/lokasi wisata/museum sonobudoyo 2.jpg"
+              alt="Museum Sonobudoyo Unit II"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Museum Sonobudoyo Unit II -</h3>
+            <p class="menu-card-address">
+              Jl. Wijilan No.27D, Panembahan, Kecamatan Kraton, Kota Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/taman-budaya.html">
+            <img
+              src="img/lokasi wisata/taman budaya.jpg"
+              alt="Taman Budaya"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Taman Budaya -</h3>
+            <p class="menu-card-address">
+              Jl. Sriwedani No.1, Ngupasan, Kec. Gondomanan, Kota Yogyakarta,
+              Daerah Istimewa Yogyakarta
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/taman-legawong.html">
+            <img
+              src="img/lokasi wisata/taman legawong.jpg"
+              alt="Taman Legawong"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Taman Legawong -</h3>
+            <p class="menu-card-address">
+              Pandeyan, Umbulharjo, Yogyakarta City, Special Region of
+              Yogyakarta 55161
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/taman-pintar.html">
+            <img
+              src="img/lokasi wisata/taman pintar.jpg"
+              alt="Taman Pintar"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Taman Pintar -</h3>
+            <p class="menu-card-address">
+              Jl. Panembahan Senopati No.1-3, Ngupasan, Kec. Gondomanan, Kota
+              Yogyakarta, Daerah Istimewa Yogyakarta 55122
+            </p>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <a href="lokasi/tamansari.html">
+            <img
+              src="img/lokasi wisata/tamansari.jpg"
+              alt="Tamansari"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">- Tamansari -</h3>
+            <p class="menu-card-address">
+              Jl. Taman Sari No.42, Kadipaten, Kraton, Yogyakarta, DI
+              Yogyakarta, Indonesia, 55132
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi section end -->
+
+    <!-- Map Section Start -->
+    <section id="map" class="map">
+      <h2><span>Peta</span> Wisata</h2>
+      <p>
+        Selamat datang di Peta Persebaran Destinasi Wisata! Temukan lokasi
+        destinasi budaya dan pendidikan yang menarik dengan mengeksplorasi peta
+        interaktif di bawah ini. Ketika Anda mengklik marker lokasi, Anda akan
+        diarahkan ke Google Maps untuk petunjuk arah yang akurat.
+      </p>
+
+      <!-- Info Box -->
+      <div class="info-box">
+        <div id="geo"></div>
+      </div>
+    </section>
+    <!-- Map Section End -->
+
+    <!-- contact section start -->
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> Kami</h2>
+      <p>
+        Terima kasih telah mengunjungi bagian 'Hubungi Kami'. Silakan manfaatkan
+        ruang ini untuk menambahkan lokasi wisata yang mungkin belum terdaftar
+        atau berikan kritik serta saran yang berharga. Kontribusi Anda sangat
+        dihargai dan akan membantu kami terus meningkatkan kualitas situs web.
+        Terima kasih atas partisipasinya!
+      </p>
+      <!-- Contact Form -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xjvqqzez"
+        method="POST"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <!-- End Contact Form -->
+    </section>
+
+    <!-- contact section end -->
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace();
+      });
+    </script>
+
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="copyright">
+        <p>&copy; 2023 Anglukis Bus. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
