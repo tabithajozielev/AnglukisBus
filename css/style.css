@@ -509,69 +509,15 @@ body {
     font-size: 55%;
   }
 
+
   body {
-    min-height: auto;
+    min-height: auto; /* Atur kembali min-height menjadi auto */
+    overflow-x: hidden;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
-
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #fff;
-    width: 100%; 
-    display: none; 
-  }
-
-  .navbar .navbar-active .navbar-nav {
-    display: block; 
-  }
-
-  .navbar .navbar-nav a {
-    color: #333;
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-    width: 100%; 
-    height: auto;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
 
   .info-box p {
-    font-size: 12px; 
+    font-size: 12px;
   }
 }
+
