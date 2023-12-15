@@ -520,10 +520,6 @@ body {
     align-items: center; 
   }
 
-  #search-input {
-    margin-right: 1rem; 
-  }
-
   .info-box p {
     font-size: 12px;
   }
