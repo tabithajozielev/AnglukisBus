@@ -511,6 +511,7 @@ body {
 
   body {
     min-height: auto; /* Atur kembali min-height menjadi auto */
+    overflow-x: hidden;
   }
 
   .info-box p {
