@@ -514,6 +514,10 @@ body {
     overflow-x: hidden;
   }
 
+  #hamburger-menu {
+    display: inline-block;
+  }
+
   .info-box p {
     font-size: 12px;
   }
