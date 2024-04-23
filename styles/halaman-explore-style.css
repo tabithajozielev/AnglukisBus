@@ -89,7 +89,7 @@ tbody tr:nth-child(1) td {
 }
 
 tbody tr:nth-child(2) td {
-  background-color: #ffcc99; /* Warna latar belakang baris 2 */
+  background-color: #008000; /* Warna latar belakang baris 2 */
   color: #000; /* Warna teks baris 2 */
 }
 
@@ -99,52 +99,52 @@ tbody tr:nth-child(3) td {
 }
 
 tbody tr:nth-child(4) td {
-  background-color: #ffccff; /* Warna latar belakang baris 4 */
+  background-color: #ffff00; /* Warna latar belakang baris 4 */
   color: #000; /* Warna teks baris 4 */
 }
 
 tbody tr:nth-child(5) td {
-  background-color: #ccffcc; /* Warna latar belakang baris 5 */
+  background-color: #964b00; /* Warna latar belakang baris 5 */
   color: #000; /* Warna teks baris 5 */
 }
 
 tbody tr:nth-child(6) td {
-  background-color: #ff6666; /* Warna latar belakang baris 6 */
+  background-color: #ffa500; /* Warna latar belakang baris 6 */
   color: #000; /* Warna teks baris 6 */
 }
 
 tbody tr:nth-child(7) td {
-  background-color: #66ff66; /* Warna latar belakang baris 7 */
+  background-color: #ff00ff; /* Warna latar belakang baris 7 */
   color: #000; /* Warna teks baris 7 */
 }
 
 tbody tr:nth-child(8) td {
-  background-color: #ff9966; /* Warna latar belakang baris 8 */
+  background-color: #40e0d0; /* Warna latar belakang baris 8 */
   color: #000; /* Warna teks baris 8 */
 }
 
 tbody tr:nth-child(9) td {
-  background-color: #cc99ff; /* Warna latar belakang baris 9 */
+  background-color: #8a2be2; /* Warna latar belakang baris 9 */
   color: #000; /* Warna teks baris 9 */
 }
 
 tbody tr:nth-child(10) td {
-  background-color: #99ffcc; /* Warna latar belakang baris 10 */
+  background-color: #808080; /* Warna latar belakang baris 10 */
   color: #000; /* Warna teks baris 10 */
 }
 
 tbody tr:nth-child(11) td {
-  background-color: #ffcc66; /* Warna latar belakang baris 11 */
+  background-color: #000080; /* Warna latar belakang baris 11 */
   color: #000; /* Warna teks baris 11 */
 }
 
 tbody tr:nth-child(12) td {
-  background-color: #ccff66; /* Warna latar belakang baris 12 */
+  background-color: #800000; /* Warna latar belakang baris 12 */
   color: #000; /* Warna teks baris 12 */
 }
 
 tbody tr:nth-child(13) td {
-  background-color: #66ccff; /* Warna latar belakang baris 13 */
+  background-color: #2e8b57; /* Warna latar belakang baris 13 */
   color: #000; /* Warna teks baris 13 */
 }
 
