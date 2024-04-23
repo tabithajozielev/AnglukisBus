@@ -84,7 +84,7 @@ tbody tr:hover {
 
 /* Ganti warna latar belakang dan teks di setiap baris */
 tbody tr:nth-child(1) td {
-  background-color: #ccccff; /* Warna latar belakang baris 1 */
+  background-color: #ff0000; /* Warna latar belakang baris 1 */
   color: #000; /* Warna teks baris 1 */
 }
 
