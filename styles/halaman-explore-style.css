@@ -134,12 +134,12 @@ tbody tr:nth-child(10) td {
 }
 
 tbody tr:nth-child(11) td {
-  background-color: #000080; /* Warna latar belakang baris 11 */
+  background-color: #0000ff; /* Warna latar belakang baris 11 */
   color: #000; /* Warna teks baris 11 */
 }
 
 tbody tr:nth-child(12) td {
-  background-color: #800000; /* Warna latar belakang baris 12 */
+  background-color: #8b0000; /* Warna latar belakang baris 12 */
   color: #000; /* Warna teks baris 12 */
 }
 
